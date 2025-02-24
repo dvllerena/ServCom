@@ -1,0 +1,80 @@
+{% extends 'miapp/base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row py-5">
+        <div class="col-md-6 d-flex align-items-center">
+            <div>
+                <h1 class="display-4 fw-bold">Bienvenido a Mi Portafolio</h1>
+                <p class="lead">Desarrollador web especializado en crear soluciones digitales innovadoras</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="{% url 'proyectos' %}" class="btn btn-primary btn-lg px-4 me-md-2">Ver Proyectos</a>
+                    <a href="{% url 'contacto' %}" class="btn btn-outline-secondary btn-lg px-4">Contactar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Hero image">
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Habilidades Técnicas</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Frontend</h5>
+                    <p class="card-text">HTML5, CSS3, JavaScript, React</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Backend</h5>
+                    <p class="card-text">Python, Django, Node.js</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Bases de Datos</h5>
+                    <p class="card-text">PostgreSQL, MongoDB, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="row py-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Proyectos Destacados</h2>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 1</h5>
+                    <p class="card-text">Descripción breve del proyecto destacado.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Descripción breve del proyecto destacado.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
